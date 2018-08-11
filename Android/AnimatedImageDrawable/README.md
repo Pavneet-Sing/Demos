@@ -1,5 +1,6 @@
 ## For only android API (Android Pie)28 and +</h2>
-Use [AnimatedImageDrawable][1] as
+
+To play gif(or jif :D) on API 28(Pie) and above you can use [AnimatedImageDrawable][1] although `Gilde` has been the first choice to play gif though [AnimatedImageDrawable][1] supports many features as shown:
 
 
    ```
@@ -66,7 +67,7 @@ Output:
 ![animation image demo](resources/animated_drawable.gif?raw=true "animated_drawable.gif")
 
 
-### • Change Tranparency
+### • Change Transparency
 
     // max 255 = opaque
     // min 0 = transparent
@@ -90,7 +91,7 @@ Output:
 
 ### • Change image shape
 
-The [canvas][3] can be obtained to change the shape of the Aanimation object. In order to do this, A [PostProcessor][4] object is required to get the canvas object and should be linked with the animationdrawable via [ImageDecoder#setPostProcessor][5] method.
+The [canvas][3] can be obtained to change the shape of the Animation object. In order to do this, A [PostProcessor][4] object is required to get the canvas object and should be linked with the animationdrawable via [ImageDecoder#setPostProcessor][5] method.
 
  - change the shape of canvas
 
