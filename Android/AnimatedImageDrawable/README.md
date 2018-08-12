@@ -64,7 +64,7 @@ static Bitmap	decodeBitmap(ImageDecoder.Source src)
 
 Output:
 
-![animation image demo](resources/animated_drawable.gif?raw=true "animated_drawable.gif")
+<img src="resources/animated_drawable.gif" width="49%" alt="angry kitty gif">
 
 
 ### • Change Transparency
@@ -87,7 +87,7 @@ Output:
 
       decodedAnimation.colorFilter = PorterDuffColorFilter(Color.RED,PorterDuff.Mode.DARKEN)
 
-![animation image demo](resources/kitty_filter.gif?raw=true "kitty_filter.gif")
+<img src="resources/kitty_filter.gif" width="49%" alt="angry kitty coloured">
 
 ### • Change image shape
 
@@ -116,7 +116,7 @@ The [canvas][3] can be obtained to change the shape of the Animation object. In 
          )
 
 
-![animation image demo](resources/kitty_in_circle.png?raw=true "kitty_in_circle.png")
+<img src="resources/kitty_in_circle.png?" width="49%" alt="angry kitty rounded corners">
 
 
   [1]: https://developer.android.com/reference/android/graphics/drawable/AnimatedImageDrawable
