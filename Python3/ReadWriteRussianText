@@ -1,0 +1,13 @@
+import codecs
+f = codecs.open('Russian.txt', 'w',encoding='utf-8')
+f.write("""
+Pavneet
+Singh
+Алексей	ahlyekSYEY	Alexei
+Альберт	ahlBYERT	Albert
+Анатолий	ahnahTOleey	Anatoly
+Андрей""")
+f.close()
+f = codecs.open('Russian.txt', 'r',encoding='utf-8')
+for line in f:
+    print(repr(line).replace('\\n','').replace('\\t',' '))
