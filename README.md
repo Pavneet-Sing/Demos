@@ -15,3 +15,6 @@ Demonstration or Explanation of topics for self-testing and distribution purpose
 [2]: /Android/AnimatedImageDrawable
 [3]: /Python3
 [4]: /Python3/PS_scraping_bs4.py
+
+## License:
+[MIT](LICENSE)
