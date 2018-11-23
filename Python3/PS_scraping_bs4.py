@@ -91,7 +91,6 @@ def run(arg, URL = '', parser = 'html.parser', content = ''):
         soup = BeautifulSoup(content.text,parser)
         contentTable  = soup.find('table', { "class" : "wikitable sortable"})
         rows  = contentTable.find_all('a', title = re.compile('^Id Tech .*'))
-        print('\n' * 10)
         for row in rows:
             print(row.get_text())
     elif(arg == 5):
@@ -101,12 +100,10 @@ def run(arg, URL = '', parser = 'html.parser', content = ''):
         rows  = contentTable.find_all('a', string = 'C', limit = 2
                                       #, recursive = False
                                       )
-        print('\n' * 10)
         print(rows)
     elif(arg == 6):
         content = requests.get(URL)
         soup = BeautifulSoup(content.text, parser)
-        print('\n' * 10)
         print(soup.title)
         print(soup.table.tr)
     elif(arg == 7):
