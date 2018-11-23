@@ -8,7 +8,7 @@ Demonstration or Explanation of topics for self-testing and distribution purpose
   - [AnimatedImageDrawable][2]: Animation API demo for android Pie (API 28 and above)
 
 - [`Python3/`][3]
-  - [PS_scraping_bs4][4]: Feature of Beautiful Soup for web scraping
+  - [PS_scraping_bs4][4]: Script to demonstrate the features of Beautiful Soup for web scraping
 
 
 [1]: /Android
