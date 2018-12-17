@@ -11,6 +11,7 @@ import time
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.touch_actions import TouchActions
 from selenium.common.exceptions import TimeoutException
+
 URL = 'https://shopping.thinkwithgoogle.com'
 EXAMPLES = ["Demonstrate unexpected use-case",
             "Demonstrate google search",
@@ -22,8 +23,7 @@ EXAMPLES = ["Demonstrate unexpected use-case",
             "Demonstrate mouse actions for Chrome",
             "Demonstrate navigation"]
 
-# remove parser, content 
-def run(input, URL = '', parser = 'html.parser', content = ''):
+def run(input, URL):
     if(input == 0):
         content = requests.get(URL)
         soup = BeautifulSoup(content.text,'html.parser')
