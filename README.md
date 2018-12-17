@@ -9,7 +9,7 @@ Demonstration or Explanation of topics for self-testing and distribution purpose
 
 - [`Python3/`][3]
   - [PS_scraping_bs4][4]: Script to demonstrate the features of Beautiful Soup for web scraping
-  - [PS_scraping_selenium][4]: Script to demonstrate application of selenium tool for web scraping
+  - [PS_scraping_selenium][5]: Script to demonstrate application of selenium tool for web scraping
 
 [1]: /Android
 [2]: /Android/AnimatedImageDrawable
