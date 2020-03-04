@@ -1,7 +1,7 @@
 <h1 align="center">Steps to setup git repo</h1>
 
 Setup git repo environment:
--------------------
+--------------------------
 
 1. Setup user details
 
@@ -58,7 +58,7 @@ Setup local repo for new project:
 
 		git remote add origin https://github.com/UserName/RepoName.git
 
-	b) Pull Auto generated license or README file
+	b) Pull auto generated license or README file
 	
 	**Caution**: use `--allow-unrelated-histories` only once for new repo to pull license, README files.
 
@@ -93,3 +93,9 @@ Setup local repo using clone:
 	Push code
 
 		git push origin master
+
+Pull Sub-module
+---------------
+For large repositories with submodules, it's recommended to update them recursively as:
+
+    git submodule update --init --recursive
