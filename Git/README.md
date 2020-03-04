@@ -8,8 +8,9 @@ Setup git repo environment:
         git config --global user.name "Your name here"
         git config --global user.email "your_email@example.com"
 
-2. Generate SSH key(skip to next step to reuse existing ssh key), 
-      a.) For Mac . [Read more about SSH keys](https://www.ssh.com/ssh/keygen)
+2. Generate SSH key(skip to next step to reuse existing ssh key) 
+      
+      a.) For Mac . ([Read more about SSH keys](https://www.ssh.com/ssh/keygen))
 
 		ssh-keygen -t rsa -C "your_email@example.com"
       b.)  Copy SSH key
@@ -32,7 +33,7 @@ Setup git repo environment:
     c.) Paste your key and save it
     ![github-ssh](https://user-images.githubusercontent.com/11755381/75902679-686efa00-5e66-11ea-9583-d27fb8ab3fec.png)
 
-Setup local repo for new project using clone:
+Setup local repo for new project:
 --------------------------------
 1. Setup new repository
 
@@ -52,6 +53,7 @@ Setup local repo for new project using clone:
 		git commit -m "init repo message"
 
 5. Push changes to remote repo
+
 	a) Create a new project under github/gitlab/bitbucket account, etc and copy the SSH-link
 
 		git remote add origin https://github.com/UserName/RepoName.git
@@ -67,7 +69,7 @@ Setup local repo for new project using clone:
 		git push origin master
 
 
-Setup local repo for cloned project:
+Setup local repo using clone:
 -----------------------------------
 1. Clone existing project from github using
 
@@ -83,7 +85,8 @@ Setup local repo for cloned project:
 3. Commit the previously staged changes
 
 		git commit -m "init repo message"
-5. Push changes to remote repo
+4. Push changes to remote repo
+
 	a) In case of new repo, make sure to create a project under github/gitlab/bitbucket account etc and copy the SSH-link
 
 		git remote add origin https://github.com/UserName/RepoName.git
