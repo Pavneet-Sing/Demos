@@ -10,15 +10,15 @@ Setup git repo environment:
 
 2. Generate SSH key(skip to next step to reuse existing ssh key) 
       
-      a.) For Mac . ([Read more about SSH keys](https://www.ssh.com/ssh/keygen))
+      a) For Mac . ([Read more about SSH keys](https://www.ssh.com/ssh/keygen))
 
 		ssh-keygen -t rsa -C "your_email@example.com"
-      b.)  Copy SSH key
+      b)  Copy SSH key
 
 		pbcopy < ~/.ssh/id_rsa.pub
    For Windows,
    
-      a.) Either use [putty.exe](https://www.putty.org) or open git bash and type
+      a) Either use [putty.exe](https://www.putty.org) or open git bash and type
 	    
 	      ssh-keygen -t rsa
     
@@ -26,11 +26,11 @@ Setup git repo environment:
 
 3. Add SSH key to account
 
-    a.) Go to https://github.com/settings/profile
+    a) Go to https://github.com/settings/profile
 	
-    b.) Open SSH key section or use https://github.com/settings/ssh
+    b) Open SSH key section or use https://github.com/settings/ssh
 	 
-    c.) Paste your key and save it
+    c) Paste your key and save it
     ![github-ssh](https://user-images.githubusercontent.com/11755381/75902679-686efa00-5e66-11ea-9583-d27fb8ab3fec.png)
 
 Setup local repo for new project:
@@ -52,15 +52,15 @@ Setup local repo for new project:
 
 		git commit -m "init repo message"
 
-5. Push changes to remote repo
+5. Push changes to the remote repo
 
 	a) Create a new project under github/gitlab/bitbucket account, etc and copy the SSH-link
 
 		git remote add origin https://github.com/UserName/RepoName.git
 
-	b) Pull auto generated license or README file
+	b) Pull auto-generated license or README file
 	
-	**Caution**: use `--allow-unrelated-histories` only once for new repo to pull license, README files.
+	**Caution**: use `--allow-unrelated-histories` only once for new repo to pull the license, README files.
 
 		git pull origin master --allow-unrelated-histories
 
@@ -85,14 +85,21 @@ Setup local repo using clone:
 3. Commit the previously staged changes
 
 		git commit -m "init repo message"
-4. Push changes to remote repo
+4. Push changes to the remote repo
 
-	a) In case of new repo, make sure to create a project under github/gitlab/bitbucket account etc and copy the SSH-link
+	a) Verify the exiting remote repo link:
+
+		git remote -v
+
+	In case of no remote URL, add one using
 
 		git remote add origin https://github.com/UserName/RepoName.git
-	Push code
+
+	b) Push code
 
 		git push origin master
+
+	Note: To reset an existing remote URL use `git remote set-url origin repo-link`.
 
 Pull Sub-module
 ---------------
