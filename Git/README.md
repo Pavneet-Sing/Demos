@@ -95,7 +95,7 @@ Setup local repo using clone:
 
 		git remote add origin https://github.com/UserName/RepoName.git
 
-	b) Push code
+	b) Push code to `master` branch
 
 		git push origin master
 
