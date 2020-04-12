@@ -29,21 +29,21 @@ def run(input, URL):
         soup = BeautifulSoup(content.text,'html.parser')
         print(soup.prettify())            # Print row with HTML formatting
     elif(input == 1):
-        driver = webdriver.Safari()             # Google Search
+        driver = webdriver.Safari()             
         driver.get("https://www.google.com")
         search = driver.find_element_by_name("q")
-        search.send_keys("Selenium")
+        search.send_keys("Selenium")             # Google Search "Selenium"
         search.submit()
     elif(input == 2):
-        browser = webdriver.Safari()             # thinkwithgooglesearch
+        browser = webdriver.Safari()             
         browser.get(URL)
         time.sleep(5)
         search = browser.find_elements_by_id('subjectInput')[1]
-        search.send_keys('Google Pixel 3')
+        search.send_keys('Google Pixel 3')       # Google Search "Google Pixel 3"
         time.sleep(5)
         search.send_keys(Keys.RETURN)
     elif(input == 3):
-        browser = webdriver.Safari()             # thinkwithgooglesearch
+        browser = webdriver.Safari()             
         browser.maximize_window()                # Required for the input tag visibility
         browser.get('https://trends.google.com/trends/')
         try: # proceed if element is found within 3 seconds otherwise raise TimeoutException
@@ -53,7 +53,7 @@ def run(input, URL):
         search = browser.find_elements(By.ID,'input-254')[0]
         search.send_keys('Google Pixel 3')
     elif(input == 4):
-        browser = webdriver.Safari()    # thinkwithgooglesearch
+        browser = webdriver.Safari()    
         browser.get(URL)                # with visibility search
         time.sleep(2)
         search = returnVisibleElement(browser.find_elements_by_id('subjectInput'))
@@ -61,7 +61,7 @@ def run(input, URL):
         time.sleep(2)
         search.send_keys(Keys.ENTER)
     elif(input == 5):
-        browser = webdriver.Safari()    # thinkwithgooglesearch
+        browser = webdriver.Safari()    
         browser.maximize_window()       # Required for the button visibility
         browser.get(URL)                # with visibility search
         time.sleep(2)
@@ -77,13 +77,13 @@ def run(input, URL):
             text = item.text
             print(text)
     elif(input == 6):
-        browser = webdriver.Safari()    # thinkwithgooglesearch
+        browser = webdriver.Safari()    
         browser.maximize_window()       # Required for the button visibility
         browser.get(URL)                # with visibility search
         time.sleep(2)
         element_to_hover_over = returnVisibleElement(browser.find_elements_by_xpath("//i[@class='material-icons'][contains(./text(),'help')]"))
     elif(input == 7):
-        browser = webdriver.Chrome()    # thinkwithgooglesearch
+        browser = webdriver.Chrome()    
         browser.maximize_window()       # Required for the button visibility
         browser.get(URL)                # with visibility search
         time.sleep(2)
@@ -93,7 +93,7 @@ def run(input, URL):
         ActionChains(browser).click(element_to_hover_over).perform()
         TouchActions(browser).long_press(element_to_hover_over).perform()
     elif(input == 8):
-        browser = webdriver.Safari()    # thinkwithgooglesearch
+        browser = webdriver.Safari()    
         browser.maximize_window()       # Required for the button visibility
         browser.get(URL)                # with visibility search
         time.sleep(2)

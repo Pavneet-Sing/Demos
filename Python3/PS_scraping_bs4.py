@@ -4,6 +4,7 @@ Script to demonstrate the various features of Beautiful Soup for web scraping
 from bs4 import BeautifulSoup
 import requests
 import re
+
 content = '''
 <!DOCTYPE html>               --> 1
 <html>                        --> 2
